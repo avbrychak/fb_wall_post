@@ -1,6 +1,8 @@
 .row.row-centered
   %h3 Please enter your runner id
   .col-md-12
-    = simple_form_for @event, html: {class: 'form-inline'}, method: 'POST', remote: true do |f|
-      = f.input :runner_id, input_html: {class: 'form-control'}, label: false
-      = f.button :submit, 'Post video to facebook by runner id', input_html: {class: 'btn btn-primary'}
+    = form_tag  events_path, method: :post, class: 'form-inline', remote: true do
+      = text_field_tag :runner_id, class: 'form-control'
+      = submit_tag 'Post video by runner id', class: 'btn btn-primary'
+
+

@@ -8,21 +8,22 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'koala'
-gem 'fb_graph2'
 gem 'figaro'
 gem 'whenever', :require => false
 gem 'simple_form'
+gem 'vkontakte_api', '~> 1.4'
 
 group :development, :test do
+  gem 'pry-rails'
   gem 'byebug'
   gem 'web-console', '~> 2.0'
   gem 'spring'
 end
 gem 'bootstrap-sass'
 gem 'haml-rails'
-gem 'high_voltage'
 gem 'omniauth'
 gem 'omniauth-facebook'
+gem 'omniauth-vkontakte'
 gem 'pg'
 gem 'puma'
 

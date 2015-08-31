@@ -17,7 +17,7 @@ class ApplicationController < ActionController::Base
     end
 
     def user_signed_in?
-      return true if current_user
+      !!current_user
     end
 
     def correct_user?
