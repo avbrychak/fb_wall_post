@@ -12,6 +12,7 @@ gem 'figaro'
 gem 'whenever', :require => false
 gem 'simple_form'
 gem 'vkontakte_api', '~> 1.4'
+gem 'font-awesome-rails'
 
 group :development, :test do
   gem 'pry-rails'

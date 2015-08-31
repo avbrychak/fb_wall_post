@@ -1,0 +1,28 @@
+.content  
+  %form.form-horizontal
+    %fieldset
+      .form-group
+        %label.col-lg-2.control-label{:for => "inputEmail"} Email
+        .col-lg-10
+          %input#inputEmail.form-control{:placeholder => "Email", :type => "text"}/
+      .form-group
+        %label.col-lg-2.control-label{:for => "inputPassword"} Password
+        .col-lg-10
+          %input#inputPassword.form-control{:placeholder => "Password", :type => "password"}/
+          .checkbox
+            %label
+              %input{:type => "checkbox"}/
+              Remember me
+      .form-group
+        .col-lg-10.col-lg-offset-2
+          %button.btn.btn-primary{:type => "reset"} Cancel
+          %button.btn.btn-success{:type => "submit"} Submit
+        .share
+          %li  
+            %a.btn.btn-block.btn-social.btn-facebook{:href => "/fb_signin"}
+              %i.fa.fa-facebook
+              Sign in with Fb
+          %li
+            %a.btn.btn-block.btn-social.btn-vk{:href => "/vk_signin"}
+              %i.fa.fa-vk
+              Sign in with Vk

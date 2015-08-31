@@ -10,6 +10,40 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
- *= require_tree .
  *= require_self
  */
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "flatly.css.scss";
+@import "bootstrap-social.css.scss";
+@import "font-awesome";
+
+html, body {
+  height: 100%;
+  margin: 0 auto;
+  overflow: inherit;
+}
+
+main {
+  margin: 80px 0 15px 0;
+}
+
+.content {
+  form {
+    width: 50%;
+    margin: 0 auto;
+    
+    .share {
+      width: 63%;
+      margin: 0 auto;
+      li {
+        list-style-type: none;
+        display: inline-block;
+
+        .btn-block {
+          margin-top: 15px;
+        }
+      }
+    }
+  }
+}
